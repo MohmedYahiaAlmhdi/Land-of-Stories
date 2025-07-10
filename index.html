@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>أرض الحكايا | LAND OF TALES</title>
+
+  <!-- Bootstrap RTL -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <!-- Animate CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <!-- icon -->
+  <link rel="icon" href="images/logo.jpeg.jpg" type="image/jpeg" >
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to bottom, #fff8e1, #ffe0b2);
+      color: #333;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: linear-gradient(90deg, #ffcc80, #ff9800);
+      color: #fff;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .section-title {
+      font-weight: bold;
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      color: #e65100;
+    }
+
+    .card {
+      transition: transform 0.3s, box-shadow 0.3s;
+      border: none;
+      border-radius: 15px;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .highlight-text {
+      font-size: 2rem;
+      color: #ffffff;
+      font-weight: bold;
+      text-shadow: 1px 1px 3px #000;
+    }
+
+    .footer {
+      background-color: #263238;
+      color: white;
+      padding: 30px 0;
+    }
+
+    .footer a:hover {
+      color: #ffcc80 !important;
+    }
+
+    .btn-primary {
+      background-color: #ff9800;
+      border: none;
+    }
+
+    .btn-primary:hover {
+      background-color: #fb8c00;
+    }
+  </style>
+</head>
+
+<header class="header py-3 bg-white shadow-sm">
+  <div class="container d-flex justify-content-between align-items-center" style="direction: rtl;">
+    <div class="d-flex align-items-center gap-3">
+      <img src="images/logo.jpeg.jpg" alt="شعار أرض الحكايا" height="70" width="70" class="rounded-circle border border-2 border-warning" style="object-fit: cover;">
+      <h1 class="title m-0"><b>أرض الحكايا</b></h1>
+    </div>
+    <h1 class="title m-0" style="direction: ltr;">LAND OF TALES</h1>
+  </div>
+</header>
+
+<style>
+  .header {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    transition: box-shadow 0.3s ease;
+  }
+
+  .header:hover {
+    box-shadow: 0 6px 25px rgba(216, 67, 21, 0.3);
+  }
+
+  .title {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #333;
+    cursor: default;
+    user-select: none;
+    transition: color 0.3s ease;
+  }
+
+  .title:hover {
+    color: #d84315;
+  }
+
+  .subtitle {
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: #555;
+    text-align: left;
+    cursor: default;
+    user-select: none;
+    transition: color 0.3s ease;
+  }
+
+  .subtitle:hover {
+    color: #d84315;
+  }
+
+  /* على الشاشات الصغيرة - تصغير الخطوص */
+  @media (max-width: 767.98px) {
+    .title {
+      font-size: 1.1rem;
+    }
+    .subtitle {
+      font-size: 1rem;
+    }
+  }
+</style>
+
+
+
+<!-- Intro Section -->
+<section class="py-5 bg-light position-relative overflow-hidden">
+  <div class="container">
+    <div class="text-center">
+      <h2 class="section-title animate__animated animate__fadeInDown animate__delay-1s mb-4" style="font-size: 2.5rem; color: #d84315;">
+        مرحبًا بكم في <span style="color:#ff9800;">أرض الحكايا</span>
+      </h2>
+      <p class="lead animate__animated animate__fadeInUp animate__delay-2s" style="font-size: 1.5rem; max-width: 800px; margin: auto; line-height: 1.8;">
+        <b>مدينة ملاهي عربية فريدة تدمج بين القصص، الشخصيات الكرتونية، الفلكلور، والتراث الشعبي،
+        لتقدم تجربة ترفيهية وتعليمية تمثل الثقافة العربية بأبهى صورة، بروح واحدة تجمع بين الماضي العريق والمستقبل المُلهم.</b>
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- قسم صورة توضيحية -->
+<section class="py-0 bg-white text-center">
+  <div class="container-fluid px-0">
+    <img src="images/pic1.jpeg.jpg" alt="صورة من أرض الحكايا" class="img-fluid w-100">
+  </div>
+</section>
+
+
+
+ <!-- City Sections -->
+<section id="city-sections" class="py-5 bg-white">
+  <div class="container">
+    <h2 class="section-title text-center mb-5" style="font-size:2.5rem; font-weight:900; color:#bf360c;">
+      أقسام المدينة
+    </h2>
+    <div class="row g-4">
+      <!-- Card Template -->
+      <div class="col-md-6">
+        <div class="card p-4 shadow-lg rounded-4 animate__animated animate__fadeInRight" style="border: none; background: #fff3e0;">
+          <h5 class="fw-bold mb-3" style="color:#e65100; font-size:1.4rem; letter-spacing:0.03em;">قسم الشاميات</h5>
+          <p style="font-size:1.1rem; line-height:1.6; color:#4e342e;">
+            يقدم أجواء شامية أصيلة من خلال الأسواق القديمة والمقاهي الشعبية وعروض الدبكة والشخصيات التراثية السورية واللبنانية.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card p-4 shadow-lg rounded-4 animate__animated animate__fadeInLeft" style="border: none; background: #fff3e0;">
+          <h5 class="fw-bold mb-3" style="color:#e65100; font-size:1.4rem; letter-spacing:0.03em;">قسم الشخصيات المصرية</h5>
+          <p style="font-size:1.1rem; line-height:1.6; color:#4e342e;">
+            يحتوي على مغامرات مدهشة مستوحاة من الشخصيات المصرية الكرتونية والتاريخية من الفراعنة حتى فطوطة.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card p-4 shadow-lg rounded-4 animate__animated animate__fadeInRight" style="border: none; background: #fff3e0;">
+          <h5 class="fw-bold mb-3" style="color:#e65100; font-size:1.4rem; letter-spacing:0.03em;">قسم الشخصيات الخليجية</h5>
+          <p style="font-size:1.1rem; line-height:1.6; color:#4e342e;">
+            يعرض التراث الخليجي وقصص شخصياته الشعبية مثل أم خماس وغشام، مع أجواء البادية والسفن والمجالس التقليدية.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card p-4 shadow-lg rounded-4 animate__animated animate__fadeInLeft" style="border: none; background: #fff3e0;">
+          <h5 class="fw-bold mb-3" style="color:#e65100; font-size:1.4rem; letter-spacing:0.03em;">قسم المغرب العربي</h5>
+          <p style="font-size:1.1rem; line-height:1.6; color:#4e342e;">
+            مستوحى من الثقافة الأمازيغية والمغربية والجزائرية والتونسية، يتضمن قصصًا وأساطير وفن الطرب الأصيل.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card p-4 shadow-lg rounded-4 animate__animated animate__fadeInRight" style="border: none; background: #fff3e0;">
+          <h5 class="fw-bold mb-3" style="color:#e65100; font-size:1.4rem; letter-spacing:0.03em;">قسم الشخصيات التي تربينا عليها</h5>
+          <p style="font-size:1.1rem; line-height:1.6; color:#4e342e;">
+            ركن حنين الطفولة حيث نجتمع مع شخصيات مثل سندباد، مازنجر، عدنان ولينا، وباباي.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card p-4 shadow-lg rounded-4 animate__animated animate__fadeInLeft" style="border: none; background: #fff3e0;">
+          <h5 class="fw-bold mb-3" style="color:#e65100; font-size:1.4rem; letter-spacing:0.03em;">رؤية الطفل العربي</h5>
+          <p style="font-size:1.1rem; line-height:1.6; color:#4e342e;">
+            قسم يُعبر عن خيال وإبداع الطفل العربي من خلال المعارض الفنية والورش التفاعلية والألعاب الفكرية.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card p-4 shadow-lg rounded-4 animate__animated animate__fadeInRight" style="border: none; background: #fff3e0;">
+          <h5 class="fw-bold mb-3" style="color:#e65100; font-size:1.4rem; letter-spacing:0.03em;">المسرح والعروض الحية</h5>
+          <p style="font-size:1.1rem; line-height:1.6; color:#4e342e;">
+            مسرح ضخم يقدم عروضًا مسرحية وموسيقية مباشرة تعيد رواية التراث العربي بطريقة ممتعة وتفاعلية.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card p-4 shadow-lg rounded-4 animate__animated animate__fadeInLeft" style="border: none; background: #fff3e0;">
+          <h5 class="fw-bold mb-3" style="color:#e65100; font-size:1.4rem; letter-spacing:0.03em;">قسم التكنولوجيا</h5>
+          <p style="font-size:1.1rem; line-height:1.6; color:#4e342e;">
+            يستخدم الواقع الافتراضي والذكاء الاصطناعي لرواية الحكايات العربية بطريقة مستقبلية وجاذبة للأطفال.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Video Section -->
+<section id="video-section" class="py-5 bg-dark text-white text-center">
+  <div class="container">
+    <h2 class="section-title">شاهد لمحة عن أرض الحكايا</h2>
+    <div class="ratio ratio-16x9">
+      <iframe width="1287" height="724" src="https://www.youtube.com/embed/so6WMe-BjWw" title="Inside Qatar&#39;s Land of Legends: The Future of Entertainment in the Middle East" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
+
+
+<!-- أهمية المشروع -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <h2 class="section-title text-center mb-5">أهمية المشروع</h2>
+    <div class="row g-4 text-center">
+      <div class="col-md-6 col-lg-3">
+        <div class="card shadow-sm border-0 h-100">
+          <div class="card-body">
+            <i class="fas fa-chart-line fa-3x text-warning mb-3"></i>
+            <h5 class="fw-bold mb-2">يدعم الاقتصاد والسياحة</h5>
+            <p class="text-muted">يساهم في تعزيز النمو الاقتصادي وتنشيط السياحة المحلية والإقليمية.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="card shadow-sm border-0 h-100">
+          <div class="card-body">
+            <i class="fas fa-briefcase fa-3x text-warning mb-3"></i>
+            <h5 class="fw-bold mb-2">يفتح فرص عمل</h5>
+            <p class="text-muted">يخلق وظائف متنوعة في مجالات التعليم، الفن، التقنية، والسياحة.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="card shadow-sm border-0 h-100">
+          <div class="card-body">
+            <i class="fas fa-child fa-3x text-warning mb-3"></i>
+            <h5 class="fw-bold mb-2">يعزز الهوية الثقافية للأطفال</h5>
+            <p class="text-muted">يغرس القيم والتراث العربي في نفوس الأطفال بطريقة مرحة وتفاعلية.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="card shadow-sm border-0 h-100">
+          <div class="card-body">
+            <i class="fas fa-globe fa-3x text-warning mb-3"></i>
+            <h5 class="fw-bold mb-2">يضع العرب على خارطة الترفيه</h5>
+            <p class="text-muted">يقدم مشروعًا تنافسيًا عالميًا يعكس ثقافتنا بأسلوب مبدع وجذاب.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-5 bg-warning text-center">
+  <h3 class="highlight-text pulse-colored-text d-inline-block">روحنا عربية ومدينتنا عالمية</h3>
+</section>
+
+<style>
+  .pulse-colored-text {
+    animation: pulseColor 6s infinite ease-in-out, scalePulse 3s infinite ease-in-out;
+    font-weight: 700;
+    font-size: 2rem;
+    display: inline-block; /* مهم لمنع تأثير التوسع على العرض */
+    transform-origin: center center;
+  }
+
+  @keyframes pulseColor {
+    0%, 100% {
+      color: #d84315;
+    }
+    50% {
+      color: #ff9800;
+    }
+  }
+
+  @keyframes scalePulse {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+  }
+</style>
+
+
+
+
+  <!-- خرائط جوجل -->
+  <section class="py-5">
+    <div class="container">
+      <div class="ratio ratio-16x9">
+        <iframe src="https://maps.google.com/maps?q=Dubai&t=&z=13&ie=UTF8&iwloc=&output=embed" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- تواصل معنا -->
+<section id="contact" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="section-title text-center mb-4">تواصل معنا</h2>
+    <p class="text-center text-muted mb-5">نحن هنا للإجابة على استفساراتك ومشاركة الحكايا معك. املأ النموذج أدناه وسنعود إليك قريبًا!</p>
+    
+    <form class="bg-white p-4 shadow rounded">
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="input-group">
+            <span class="input-group-text bg-warning text-white"><i class="fas fa-user"></i></span>
+            <input type="text" class="form-control" placeholder="الاسم الكامل">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="input-group">
+            <span class="input-group-text bg-warning text-white"><i class="fas fa-envelope"></i></span>
+            <input type="email" class="form-control" placeholder="البريد الإلكتروني">
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="input-group">
+            <span class="input-group-text bg-warning text-white"><i class="fas fa-comment-dots"></i></span>
+            <textarea class="form-control" rows="5" placeholder="رسالتك"></textarea>
+          </div>
+        </div>
+        <div class="col-12 text-center">
+          <button type="submit" class="btn btn-warning px-5 py-2 mt-3 shadow">إرسال الرسالة</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
+
+
+  <!-- Footer -->
+  <footer class="footer text-center">
+    <p class="mb-2">جميع الحقوق محفوظة &copy; 2025 أرض الحكايا</p>
+    <div>
+      <a href="#" class="text-white me-3"><i class="fab fa-facebook fa-lg"></i></a>
+      <a href="#" class="text-white me-3"><i class="fab fa-twitter fa-lg"></i></a>
+      <a href="#" class="text-white me-3"><i class="fab fa-instagram fa-lg"></i></a>
+      <a href="#" class="text-white"><i class="fab fa-youtube fa-lg"></i></a>
+    </div>
+  </footer>
+</body>
+
+</html>
