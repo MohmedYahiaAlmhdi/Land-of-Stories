@@ -239,14 +239,71 @@
 
 
 <!-- Video Section -->
-<section id="video-section" class="py-5 bg-dark text-white text-center">
+<section id="video-section" class="py-3 bg-dark text-white text-center">
   <div class="container">
-    <h2 class="section-title">شاهد لمحة عن أرض الحكايا</h2>
-    <div class="ratio ratio-16x9">
-      <iframe width="1287" height="724" src="https://www.youtube.com/embed/so6WMe-BjWw" title="Inside Qatar&#39;s Land of Legends: The Future of Entertainment in the Middle East" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <h2 class="section-title mb-4 display-5 fw-bold">شاهد لمحة عن أرض الحكايا</h2>
+    
+    <div class="video-wrapper position-relative rounded overflow-hidden shadow-lg mx-auto" style="max-width: 960px;">
+      <video id="customVideo" class="w-100" style="height: 600px;" controls poster="images/img3.jpg">
+        <source src="videos/vedio1.mp4" type="video/mp4">
+        متصفحك لا يدعم تشغيل الفيديو.
+      </video>
     </div>
   </div>
 </section>
+
+<style>
+  video {
+    object-fit: contain;
+    width: 100%;
+    height: 600px;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .video-wrapper video {
+    border: 3px solid #fff;
+    border-radius: 12px;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  @media (hover: hover) {
+    .video-wrapper video:hover {
+      transform: scale(1.01);
+    }
+  }
+</style>
+
+<script>
+  const video = document.getElementById('customVideo');
+
+  let isTouchHandled = false;
+
+  function togglePlay() {
+    if (video.paused) {
+      video.play();
+      video.muted = false; // تأكد الصوت شغال عند التشغيل
+    } else {
+      video.pause();
+      video.muted = true;  // كتم الصوت عند الإيقاف (اختياري)
+    }
+  }
+
+  video.addEventListener('touchend', (e) => {
+    e.preventDefault();
+    togglePlay();
+    isTouchHandled = true;
+  });
+
+  video.addEventListener('click', (e) => {
+    if (!isTouchHandled) {
+      togglePlay();
+    }
+    isTouchHandled = false;
+  });
+</script>
+
+
 
 
 <!-- أهمية المشروع -->
@@ -329,14 +386,18 @@
 
 
 
-  <!-- خرائط جوجل -->
-  <section class="py-5">
-    <div class="container">
-      <div class="ratio ratio-16x9">
-        <iframe src="https://maps.google.com/maps?q=Dubai&t=&z=13&ie=UTF8&iwloc=&output=embed" allowfullscreen></iframe>
-      </div>
+<!-- خرائط جوجل - منتزه ومسبح الرابية، صحنايا -->
+<section class="py-5">
+  <div class="container">
+    <div class="ratio ratio-16x9">
+      <iframe 
+        src="https://maps.google.com/maps?q=منتجع%20الرابية%20صحنايا%20سوريا&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+        allowfullscreen>
+      </iframe>
     </div>
-  </section>
+  </div>
+</section>
+
 
   <!-- تواصل معنا -->
 <section id="contact" class="py-5 bg-light">
